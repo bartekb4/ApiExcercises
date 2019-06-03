@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
 
 
 //Zadanie 4
-
+//Pobierz wyroki dla danego słowa kluczowego
 public class SaosAPI {
     public String connect() throws IOException, ParseException {
         String query="rower";
@@ -23,39 +23,36 @@ public class SaosAPI {
 
 
         HttpURLConnection con3 = (HttpURLConnection) url1.openConnection();
-//ustaw odpowiednie parametry polaczenia korzystając z nbpApi
-
+        //ustaw odpowiednie parametry polaczenia korzystając z nbpApi
 
 
         System.out.println(con3);
         String res=null;
         // korzystajac z nbp Api odbierz odpowiedz API na zapytanie (BufferedReader...etc)
 
-
-
-            return res;
+        return res;
 
         }
 
     public String court(String res) throws org.json.simple.parser.ParseException {
-//tu chemy dostac kilka wyrokow wiec musimy je przekazac do jakiejs struktury eg. List
+
         JSONParser parse1 = new JSONParser();
         JSONObject jobj1 = (JSONObject) parse1.parse(res);
-//przekaz do jsonArray1 wartosci dla parametru items z jobj1
+        //przekaz do jsonArray1 wartosci dla klucza items z jobj1
         JSONArray jsonArray1=null;
 
         System.out.println(jsonArray1);
         String data = null;
-        //do List wyroki przypisz obiekt dla wartosci textContent w jsonArray1 po .mapToObj(index -> ((JSONObject)
-     //   List<Object> wyroki = IntStream.range(0, jsonArray1.size())
-       //         .mapToObj(index -> ((JSONObject)
-       //         .collect(Collectors.toList());
+        //tu chemy dostac kilka wyrokow wiec musimy je przekazac do jakiejs struktury eg. List
+        //do List wyroki przypisz obiekt dla klucza textContent w jsonArray1
+        //List<Object> wyroki = IntStream.range(0, jsonArray1.size())
+        //         .mapToObj(index -> ((JSONObject)//tu trzeba dodac odwolanie do klucza
+        //         .collect(Collectors.toList());
 
-       // System.out.println(wyroki);
+        //System.out.println(wyroki);
 
-    //    data= String.valueOf(wyroki);
+        //data= String.valueOf(wyroki);
         return data;
-
 
     }
     public void write(String string) throws IOException {

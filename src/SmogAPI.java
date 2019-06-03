@@ -21,8 +21,7 @@ public class SmogAPI {
 
         URL url1 = new URL(" http://api.gios.gov.pl/pjp-api/rest/aqindex/getIndex/400");
 
-
-//korzystając z nbpAPi nawiaż połączenie z api.gios i odbierz odpowiedz
+//korzystając z przykladu nbpAPi nawiaż połączenie z api.gios i odbierz odpowiedz
           HttpURLConnection con3=null;
 
 
@@ -58,10 +57,8 @@ public class SmogAPI {
         String pm25=null;
         String co=null;
 
-// przetworz odpowiedz Api dostając sie do parametrow pm25IndexLevel coIndexLevel pm10IndexLevel przy pomocy jobj1.get i przypisz je do kolejnych jsonOBjectow
+        // przetworz odpowiedz Api przy pomocy kluczy pm25IndexLevel , coIndexLevel , pm10IndexLevel //wpisz klucze do jobj1.get i przypisz je do kolejnych jsonObjects
 
-//hint
-        jsonObject2= (JSONObject) jobj1.get("pm25IndexLevel");//etc..
 
         // następnie przekaz wartość dla klucza indexLevelName do odpowiednich stringow
 

@@ -15,15 +15,11 @@ public class NbpAPI {
 
 
 
-
-    public Calculator calculator;
-    public String query;
 /*
 Zadanie 1.
 W metodzie connect stworz obiekt URL i nawiąż połączenie z http://api.nbp.pl/api/exchangerates/rates/a/", i odczytaj kurs wybranej waluty
 */
     public String connect(String query) throws MalformedURLException {
-
 
         //tu stworz obiekt URL z linkiem http://api.nbp.pl/api/exchangerates/rates/a/
 
@@ -31,15 +27,11 @@ W metodzie connect stworz obiekt URL i nawiąż połączenie z http://api.nbp.pl
 
         //dodaj do niego String query
 
-
-        //HttpURLConnection con3 = null;
         String res = null;
         HttpURLConnection con3 = null;
         try {
             con3 = (HttpURLConnection) url1.openConnection();
             //dodaj typ zapytania 'get' do obiektu con3
-
-
             con3.setRequestProperty("Content-Type", "application/json; utf-8");
             con3.setRequestProperty("Accept", "application/json");
         } catch (IOException e) {
@@ -58,46 +50,36 @@ W metodzie connect stworz obiekt URL i nawiąż połączenie z http://api.nbp.pl
 
             res = String.valueOf(response);
             System.out.println(res);
-
-
         } catch (IOException e) {
             e.printStackTrace();
         }
         return res;
 
     }
-//zadanie 2.
+    //zadanie 2.
     //Z odpowiedzi API odczytaj i przekaż wartość "mid" z JSON do double data,
     public double Rate(String res) throws ParseException {
          JSONParser parse1 = new JSONParser();
          JSONObject jobj1 = (JSONObject) parse1.parse(res);
 
-//Store the JSON object in JSON array as objects (For level 1 array element i.e rates)
+        //Store the JSON object in JSON array as objects (For level 1 array element i.e rates)
 
         JSONArray jsonArray1=null;
 
         System.out.println(jsonArray1);
         double data = 0;
-//Get data for rates array
+        //Get data for rates array
       for (int i = 0; i < jsonArray1.size(); i++) {
 
             //Store the JSON objects in an array
             //Get the index of the JSON object and print the values as per the index
-             //Store the JSON object in JSON array as objects (For level 2 array element i.e mid)
-        //    przekaz tablice jsonArray1 przy pomocy iteratora i metody get do jsonObject2
+            //Store the JSON object in JSON array as objects (For level 2 array element i.e mid)
+            //przekaz tablice jsonArray1 przy pomocy iteratora i metody get do jsonObject2
             JSONObject jsonObject2=null;
 
 
-
-
-            //przekaz do zmiennej data wartosc parametru mid dla jsonObject2
-
-
-
-
+            //przekaz do zmiennej data wartosc dla klucza mid dla jsonObject2
         }
         return data;
-
-
     }
 }
