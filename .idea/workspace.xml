@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32ae955d-df80-4a86-b759-b1fe0531277f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NBPExcercises/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NBPExcercises/Calculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NBPExcercises/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NBPExcercises/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NBPExcercises/NbpAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NBPExcercises/NbpAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NBPExcercises/SaosAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NBPExcercises/SaosAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NBPExcercises/SmogAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NBPExcercises/SmogAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StreamSearchFinal/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StreamSearchFinal/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StreamSearchFinal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StreamSearchFinal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StreamSearchFinal/out/artifacts/StreamSearchFinal_jar/StreamSearchFinal.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../StreamSearchFinal/out/artifacts/StreamSearchFinal_jar/StreamSearchFinal.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Excercises-solved/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Excercises-solved/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Excercises-solved/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Excercises-solved/src/Calculator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +30,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/NbpAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
+            <state relative-caret-position="601">
               <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,7 +82,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -116,39 +109,20 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Excercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Excercises" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Excercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Excercises" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Excercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Excercises" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559556064680" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Excercises-solved" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -201,16 +175,17 @@
       <workItem from="1559552295534" duration="3746000" />
       <workItem from="1559568988158" duration="1247000" />
       <workItem from="1559581772635" duration="392000" />
+      <workItem from="1559582778651" duration="44000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26379000" />
+    <option name="totallyTimeSpent" value="26423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12684564" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12818792" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -287,7 +262,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NbpAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
+        <state relative-caret-position="601">
           <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />

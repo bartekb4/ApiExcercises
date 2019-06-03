@@ -23,4 +23,5 @@ public class Calculator {
         return price;
 
     }
+    //Try not to use it unless you really must ;)//
 }
