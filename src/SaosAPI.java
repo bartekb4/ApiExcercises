@@ -10,6 +10,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+
+//Zadanie 4
+
 public class SaosAPI {
     public String connect() throws IOException, ParseException {
         String query="rower";
@@ -26,29 +29,21 @@ public class SaosAPI {
 
         System.out.println(con3);
         String res=null;
-        // korzystajac z nbp Api odbierz odpowiedz API na zapytanie
+        // korzystajac z nbp Api odbierz odpowiedz API na zapytanie (BufferedReader...etc)
 
-  /*      try (BufferedReader br = new BufferedReader(
-                new InputStreamReader(con3.getInputStream(), "utf-8"))) {  // gettting response
-            StringBuilder response = new StringBuilder();
-            String responseLine = null;
-            while ((responseLine = br.readLine()) != null) {
-                response.append(responseLine.trim());
-            }
-            res = String.valueOf(response);
-            System.out.println(res);*/
+
 
             return res;
 
         }
 
     public String court(String res) throws org.json.simple.parser.ParseException {
-
+//tu chemy dostac kilka wyrokow wiec musimy je przekazac do jakiejs struktury eg. List
         JSONParser parse1 = new JSONParser();
         JSONObject jobj1 = (JSONObject) parse1.parse(res);
 //przekaz do jsonArray1 wartosci dla parametru items z jobj1
         JSONArray jsonArray1=null;
-       // JSONArray jsonArray1 = (JSONArray) jobj1.get("items");
+
         System.out.println(jsonArray1);
         String data = null;
         //do List wyroki przypisz obiekt dla wartosci textContent w jsonArray1 po .mapToObj(index -> ((JSONObject)

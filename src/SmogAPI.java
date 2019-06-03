@@ -23,13 +23,8 @@ public class SmogAPI {
 
 
 //korzystając z nbpAPi nawiaż połączenie z api.gios i odbierz odpowiedz
+          HttpURLConnection con3=null;
 
-        HttpURLConnection con3 = (HttpURLConnection) url1.openConnection();
-
-
-        con3.setRequestMethod("GET");
-        con3.setRequestProperty("Content-Type", "application/json; utf-8");
-        con3.setRequestProperty("Accept", "application/json");
 
 
         System.out.println(con3);
@@ -64,10 +59,11 @@ public class SmogAPI {
         String co=null;
 
 // przetworz odpowiedz Api dostając sie do parametrow pm25IndexLevel coIndexLevel pm10IndexLevel przy pomocy jobj1.get i przypisz je do kolejnych jsonOBjectow
-        // następnie przekaz paramtetr indexLevelName do odpowiednich stringow
 
+//hint
+        jsonObject2= (JSONObject) jobj1.get("pm25IndexLevel");//etc..
 
-
+        // następnie przekaz wartość dla klucza indexLevelName do odpowiednich stringow
 
         System.out.println("pm10: "+ pm10);
         System.out.println("pm25: " + pm25);

@@ -23,7 +23,7 @@ Zadanie 1.
 W metodzie connect stworz obiekt URL i nawiąż połączenie z http://api.nbp.pl/api/exchangerates/rates/a/", i odczytaj kurs wybranej waluty
 */
     public String connect(String query) throws MalformedURLException {
-        //String query="eur";
+
 
         //tu stworz obiekt URL z linkiem http://api.nbp.pl/api/exchangerates/rates/a/
 
@@ -67,17 +67,16 @@ W metodzie connect stworz obiekt URL i nawiąż połączenie z http://api.nbp.pl
 
     }
 //zadanie 2.
-    //Zparsuj odpowiedz API i przekaż wartość "mid" z JSON do double data,
+    //Z odpowiedzi API odczytaj i przekaż wartość "mid" z JSON do double data,
     public double Rate(String res) throws ParseException {
          JSONParser parse1 = new JSONParser();
-
-        JSONObject jobj1 = (JSONObject) parse1.parse(res);
+         JSONObject jobj1 = (JSONObject) parse1.parse(res);
 
 //Store the JSON object in JSON array as objects (For level 1 array element i.e rates)
-        // stworz nowy obiekt jsonarray i metodą get pobierz z jobj parametr rates
+
         JSONArray jsonArray1=null;
 
-       System.out.println(jsonArray1);
+        System.out.println(jsonArray1);
         double data = 0;
 //Get data for rates array
       for (int i = 0; i < jsonArray1.size(); i++) {
@@ -85,7 +84,7 @@ W metodzie connect stworz obiekt URL i nawiąż połączenie z http://api.nbp.pl
             //Store the JSON objects in an array
             //Get the index of the JSON object and print the values as per the index
              //Store the JSON object in JSON array as objects (For level 2 array element i.e mid)
-        //    przekaz tablice jsonArray1 do jsonObject2 przy pomocy iteratora i metody get do jsonObject2
+        //    przekaz tablice jsonArray1 przy pomocy iteratora i metody get do jsonObject2
             JSONObject jsonObject2=null;
 
 
