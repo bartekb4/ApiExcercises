@@ -12,7 +12,11 @@ public class Main {
        //rzeczy do NBP
         NbpAPI nbpAPI=new NbpAPI();
         Calculator calculator=new Calculator();
-/*      double rate= nbpAPI.Rate(nbpAPI.connect(calculator.Currency()));
+     //   String apiResp=nbpAPI.connect(calculator.Currency()); //odkomentuj po 1
+    //    System.out.println(apiResp);
+
+        //odkomentuj po 2.
+/*      double rate= nbpAPI.Rate(api Resp);
         System.out.println("Twoja kwota w euro: ");
         calculator.Price(rate,calculator.Quote());
 */
